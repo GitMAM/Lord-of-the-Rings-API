@@ -1,5 +1,5 @@
 # Lord Of Rings SDK
-An SDK to easily consume the lord of the Rings API written in Swift for iOS, iPadOS and MacOS
+An SDK to easily consume the Lord of the Rings API written in Swift for iOS, iPadOS and MacOS
 
 ## Example
 
