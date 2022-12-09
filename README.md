@@ -53,7 +53,7 @@ You will need to configure the LordAPITests by passing the required token and ch
 
 ## Author
 
-Mohamed Ali, 73722917+moalimu@users.noreply.github.com
+Mohamed Ali
 
 ## License
 
