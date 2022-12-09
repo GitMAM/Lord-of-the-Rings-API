@@ -24,7 +24,9 @@ pod 'lordOfRingsSDK'
 
 To get started, you'll need to first obtain an API token from the Lord of the Rings API website. Once you have a token, you can use it to instantiate an instance of the LordOfTheRingsAPI class:
 
+```
 let lordOfTheRingsAPI = LordOfTheRingsAPI(token: "my-api-token")
+```
 
 ## Making requests
 
@@ -34,6 +36,7 @@ Each method takes a completion block as a parameter. This block will be called w
 
 Here is an example of how you might use the LordOfTheRingsAPI class to fetch a list of books:
 
+```
 lordOfTheRingsAPI.fetchBooks { result in
   switch result {
   case .success(let books):
@@ -42,6 +45,7 @@ lordOfTheRingsAPI.fetchBooks { result in
     // Handle the error
   }
 }
+```
 
 In this example, we call the fetchBooks method, passing in a completion block to be called with the result of the request. In the completion block, we handle the result of the request by either doing something with the list of books in the case of a success, or handling the error in the case of a failure.
 
