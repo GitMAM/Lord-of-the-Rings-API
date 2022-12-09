@@ -45,6 +45,8 @@ lordOfTheRingsAPI.fetchBooks { result in
 
 In this example, we call the fetchBooks method, passing in a completion block to be called with the result of the request. In the completion block, we handle the result of the request by either doing something with the list of books in the case of a success, or handling the error in the case of a failure.
 
+More usage examples are added to the ViewController class in the example project
+
 
 ## Testing
 There are three main classes for testing the library, NetworkingTests, LordAPITests and ModelsTests in the Tests target, you can run the test individually, by going to the file and tapping the ring on the left or (COMMAND + U)
