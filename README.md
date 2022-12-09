@@ -1,4 +1,5 @@
-# lordOfRingsSDK
+# Lord OfRings SDK
+An SDK to easily consume the lord of the Rings API
 
 ## Example
 
