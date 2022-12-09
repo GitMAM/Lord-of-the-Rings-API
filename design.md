@@ -12,4 +12,7 @@ fetchMovie(withID:): fetches a single movie by its ID.
 fetchQuotes(forMovieWithID:): fetches the quotes for a given movie by its ID.
 Each of these methods takes a completion block as its final parameter, which is called with the result of the request. The result is either a success, containing the decoded response data, or a failure, containing an error.
 
+The library classes can be found here https://github.com/GitMAM/Mohamed-Ibrahim-SDK/tree/main/lordOfRingsSDK/Classes
+The tests classes can be found here https://github.com/GitMAM/Mohamed-Ibrahim-SDK/tree/main/Example/Tests
+
 In summary, the LordOfTheRingsAPI class provides an easy-to-use interface for making requests to the "Lord of the Rings" API and handling the response data. It is designed to be simple to use and flexible enough to support the various endpoints exposed by the API.
