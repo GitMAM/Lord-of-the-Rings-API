@@ -26,6 +26,7 @@ final class ViewController: UIViewController {
       }
     }
     
+    
     /// fetch a  book example
     lordOfTheRingsAPI.fetchBook(withID: "5cf58077b53e011a64671583") { result in
       switch result {
@@ -34,6 +35,19 @@ final class ViewController: UIViewController {
         print(book)
       case .failure(let failure):
         print(failure)
+      }
+    }
+    
+    /// you can combine the two methods above like so
+    lordOfTheRingsAPI.fetchBooks { [weak self] result in
+      switch result {
+      case .success(let books):
+        guard let firstId = books.docs.first?.id else { return }
+        self?.lordOfTheRingsAPI.fetchBook(withID: firstId) { result in
+          print(result)
+        }
+      case .failure(let error):
+        print(error)
       }
     }
     
@@ -60,7 +74,6 @@ final class ViewController: UIViewController {
     /// fetch a chapter example
     lordOfTheRingsAPI.fetchChapters(forBookWithID: "5cf58077b53e011a64671583") { result in
       switch result {
-        
       case .success(let books):
         print(books)
       case .failure(let failure):
