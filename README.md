@@ -51,7 +51,7 @@ In this example, we call the fetchBooks method, passing in a completion block to
 
 
 ## Testing
-There are two main classes for testing the library, NetworkingTests, LordAPITests and ModelsTests in the Tests target, you can run the test individually, by going to the file and tapping the ring on the left or (COMMAND + U)
+There are three main classes for testing the library, NetworkingTests, LordAPITests and ModelsTests in the Tests target, you can run the test individually, by going to the file and tapping the ring on the left or (COMMAND + U)
 You will need to configure the LordAPITests by passing the required token and changing the names and the Ids inside the tests
 
 
