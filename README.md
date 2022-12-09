@@ -3,7 +3,7 @@ An SDK to easily consume the Lord of the Rings API written in Swift for iOS, iPa
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first. The example project is an iOS app that uses the endpoints available in the main viewController.
 
 ## Requirements
 
