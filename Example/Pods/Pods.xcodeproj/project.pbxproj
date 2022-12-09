@@ -592,19 +592,11 @@
 		D3C000FF29429F260039B346 /* LordOfTheRings */ = {
 			isa = PBXGroup;
 			children = (
-				D3C001022942A0720039B346 /* Books */,
-			);
-			name = LordOfTheRings;
-			path = lordOfRingsSDK/Classes/LordOfTheRings;
-			sourceTree = "<group>";
-		};
-		D3C001022942A0720039B346 /* Books */ = {
-			isa = PBXGroup;
-			children = (
 				D3C0010029429FE90039B346 /* LordOfTheRingsAPI.swift */,
 				D3C001032942A08F0039B346 /* Models.swift */,
 			);
-			path = Books;
+			name = LordOfTheRings;
+			path = lordOfRingsSDK/Classes/LordOfTheRings;
 			sourceTree = "<group>";
 		};
 		DD7EA158757ED87C5A1687D0341AE4D1 /* Nimble */ = {
