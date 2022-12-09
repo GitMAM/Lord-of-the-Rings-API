@@ -110,9 +110,9 @@
 		C7DB9FB7C8378ADC0DBC744F9359C0C9 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ED7710C8C7101F486AAFBC6FA9B0AA /* BeIdenticalTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CA32F74C00C2448397720AB161360835 /* CwlDarwinDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E1AE6ED7183DD340A156553DCBDD8 /* CwlDarwinDefinitions.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CB56A9AD610F6717133AA1110C1AAA94 /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ACF672EF788F2241B4D2EB8E7E4102 /* QuickConfiguration.m */; };
-		D3C000FC29429EFF0039B346 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C000F929429EFF0039B346 /* Networking.swift */; };
-		D3C000FD29429EFF0039B346 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C000FA29429EFF0039B346 /* Network.swift */; };
-		D3C000FE29429EFF0039B346 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C000FB29429EFF0039B346 /* HTTPMethod.swift */; };
+		D39B90D829434CE9000C185F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B90D529434CE9000C185F /* Networking.swift */; };
+		D39B90D929434CE9000C185F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B90D629434CE9000C185F /* Network.swift */; };
+		D39B90DA29434CE9000C185F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B90D729434CE9000C185F /* HTTPMethod.swift */; };
 		D3C0010129429FE90039B346 /* LordOfTheRingsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0010029429FE90039B346 /* LordOfTheRingsAPI.swift */; };
 		D3C001042942A08F0039B346 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C001032942A08F0039B346 /* Models.swift */; };
 		D6F1A9AFE522D73CB8BDF851FF6F7ACC /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FB990A1ED09361EDFC2B43B68366F2 /* BeEmpty.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -289,9 +289,9 @@
 		CEB97F8B51303B8A4890985DE1FFA1FE /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Sources/NimbleObjectiveC/DSL.h; sourceTree = "<group>"; };
 		D06DCFF3130CBFDFC3BAE692FC234608 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D18C2B33F65787C3DF9FBD891429A2E2 /* Predicate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Predicate.swift; path = Sources/Nimble/Matchers/Predicate.swift; sourceTree = "<group>"; };
-		D3C000F929429EFF0039B346 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		D3C000FA29429EFF0039B346 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		D3C000FB29429EFF0039B346 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		D39B90D529434CE9000C185F /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D39B90D629434CE9000C185F /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		D39B90D729434CE9000C185F /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		D3C0010029429FE90039B346 /* LordOfTheRingsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LordOfTheRingsAPI.swift; sourceTree = "<group>"; };
 		D3C001032942A08F0039B346 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		D54DD6EC15668EF029409ECBF02A8BAB /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Nimble/DSL.swift; sourceTree = "<group>"; };
@@ -430,7 +430,7 @@
 		4A37DD2545B3729CC1021595A7059BDA /* lordOfRingsSDK */ = {
 			isa = PBXGroup;
 			children = (
-				D3C000F829429EFF0039B346 /* NetworkClient */,
+				D39B90D429434CE9000C185F /* NetworkClient */,
 				D3C000FF29429F260039B346 /* LordOfTheRings */,
 				D120C882D259C606A1768E22EF1AA3C4 /* Pod */,
 				CC523F13AE254BEBAF00B69EC355EACA /* Support Files */,
@@ -578,14 +578,15 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		D3C000F829429EFF0039B346 /* NetworkClient */ = {
+		D39B90D429434CE9000C185F /* NetworkClient */ = {
 			isa = PBXGroup;
 			children = (
-				D3C000F929429EFF0039B346 /* Networking.swift */,
-				D3C000FA29429EFF0039B346 /* Network.swift */,
-				D3C000FB29429EFF0039B346 /* HTTPMethod.swift */,
+				D39B90D529434CE9000C185F /* Networking.swift */,
+				D39B90D629434CE9000C185F /* Network.swift */,
+				D39B90D729434CE9000C185F /* HTTPMethod.swift */,
 			);
-			path = NetworkClient;
+			name = NetworkClient;
+			path = lordOfRingsSDK/Classes/NetworkClient;
 			sourceTree = "<group>";
 		};
 		D3C000FF29429F260039B346 /* LordOfTheRings */ = {
@@ -1034,12 +1035,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3C000FC29429EFF0039B346 /* Networking.swift in Sources */,
-				D3C000FE29429EFF0039B346 /* HTTPMethod.swift in Sources */,
-				D3C000FD29429EFF0039B346 /* Network.swift in Sources */,
+				D39B90D929434CE9000C185F /* Network.swift in Sources */,
 				17D74B0239447C45680ED1D58E6BB2AE /* lordOfRingsSDK-dummy.m in Sources */,
+				D39B90DA29434CE9000C185F /* HTTPMethod.swift in Sources */,
 				D3C001042942A08F0039B346 /* Models.swift in Sources */,
 				D3C0010129429FE90039B346 /* LordOfTheRingsAPI.swift in Sources */,
+				D39B90D829434CE9000C185F /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
