@@ -1,0 +1,22 @@
+{
+  "name": "lordOfRingsSDK",
+  "version": "0.1.0",
+  "summary": "A short description of lordOfRingsSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Mohamed Ali/lordOfRingsSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mohamed Ali": "73722917+moalimu@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/Mohamed Ali/lordOfRingsSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": "lordOfRingsSDK/Classes/**/*"
+}

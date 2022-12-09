@@ -1,0 +1,6 @@
+framework module Pods_lordOfRingsSDK_Example {
+  umbrella header "Pods-lordOfRingsSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

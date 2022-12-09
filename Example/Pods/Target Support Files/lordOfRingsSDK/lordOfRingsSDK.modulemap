@@ -1,0 +1,6 @@
+framework module lordOfRingsSDK {
+  umbrella header "lordOfRingsSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
